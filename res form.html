@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="res form.css">
+</head>
+<body>
+    <h1 class="title">Place an order</h1>
+    <br><br>
+<div>
+    <form id="form" method="get" target="_blank">
+        <div> Name   <input type="text" placeholder="Enter your Name" required></div><br>
+        <div> Phone   <input type="tel" placeholder="Phone"required></div><br>
+        <div> Address   <input type="text" placeholder="Enter address"required></div><br>
+        <div>Select food item 
+        <select placeholder="Select item"required>
+            <option value="Hot & Spicy Food">Hot & Spicy Food</option>
+            <option value="Organic Food">Organic Food</option>
+            <option value="Sea Food">Sea Food</option>
+            <option value="Healthy Food">Healthy Food</option>
+            <option value="White Meat">White Meat</option>
+            <option value="Drinks">Drinks</option>
+        </select></div><br>
+        <div> Quantity  <input type="number" placeholder="Select Quantity"required>
+        </div><br>
+	    <input type="submit" id="subbtn"/>
+	    <input type="Reset" id="resbtn"/>
+    </form>
+    <script>
+        var x = document.getElementById("subbtn");
+        x.addEventListener("click",orderconfirm);
+        x.addEventListener("click",myFun2);
+
+        function orderconfirm()    
+        {
+            alert("Order Received. Thanks for Choosing us!");
+        }
+        function myFun2()    
+        {
+            window.location.reload();
+        }
+    </script>
+</div>
+</body>
+</html>
